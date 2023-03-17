@@ -1,0 +1,33 @@
+{
+  "name": "ble-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "postinstall": "react-native setup-ios-permissions "
+  },
+  "dependencies": {
+    "@config-plugins/react-native-ble-plx": "^5.0.0",
+    "buffer": "^6.0.3",
+    "expo": "~47.0.12",
+    "expo-bluetooth": "^0.0.0",
+    "expo-permissions": "~14.0.0",
+    "expo-splash-screen": "~0.17.5",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-ble-manager": "^8.8.0",
+    "react-native-ble-plx": "^2.0.3",
+    "react-native-permissions": "^3.7.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "pod-install": "0.1.38"
+  },
+  "private": true,
+  "reactNativePermissionsIOS": [
+    "AppTrackingTransparency"
+  ]
+}

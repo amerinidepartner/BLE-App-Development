@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/Cellar/node/19.4.0/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js add expo-bluetooth
+
+PATH: 
+  /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/apple/Library/Android/sdk/emulator:/Users/apple/Library/Android/sdk/platform-tools:/Users/apple/development/flutter//bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.24.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1495:16)
+
+npm manifest: 
+  {
+    "name": "ble-app",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "expo start --dev-client",
+      "android": "expo run:android",
+      "ios": "expo run:ios",
+      "web": "expo start --web",
+      "postinstall": "react-native setup-ios-permissions "
+    },
+    "dependencies": {
+      "@config-plugins/react-native-ble-plx": "^5.0.0",
+      "expo": "~47.0.12",
+      "expo-permissions": "~14.0.0",
+      "expo-splash-screen": "~0.17.5",
+      "expo-status-bar": "~1.4.2",
+      "react": "18.1.0",
+      "react-native": "0.70.5",
+      "react-native-ble-plx": "^2.0.3",
+      "react-native-permissions": "^3.7.3"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9",
+      "pod-install": "0.1.38"
+    },
+    "private": true,
+    "reactNativePermissionsIOS": [
+      "AppTrackingTransparency"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
